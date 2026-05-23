@@ -10,7 +10,9 @@ If something I built saved you a debug session or a week of agency-shopping, [sp
 
 ### 🔧 Dev tools
 
-- **[or-doctor](https://github.com/Tubbster-Claw/or-doctor)** — OpenRouter model validator CLI. Stops the *"400 - <model> is not a valid model ID"* rabbit hole before you ship a stale config. `or-doctor check <model_id>` answers "is this real, can I afford it, does it respond" in 2 seconds.
+- **[mem-doctor](https://github.com/Tubbster-Claw/mem-doctor)** *(new)* — Diagnose agent-memory framework usage and surface known pitfalls. Scans your repo for `mem0`, `mempalace`, LangChain memory, llama-index memory, Hermes-Agent. Tells you the gotchas + the fix prescription for each, with file:line refs. Single-file, no deps.
+
+- **[or-doctor](https://github.com/Tubbster-Claw/or-doctor)** — OpenRouter model validator CLI. Stops the *"400 - <model> is not a valid model ID"* rabbit hole before you ship a stale config. `or-doctor check <model_id>` answers "is this real, can I afford it, does it respond" in 2 seconds. v0.2 hardened by Codex review.
 
 - **[prompt-cache](https://github.com/Tubbster-Claw/prompt-cache)** — Single-file Python disk cache for LLM API calls. Wrap any client (OpenAI / Anthropic / OpenRouter / raw HTTP). Identical calls return from disk, $0. For dev iteration, eval reproducibility, demo determinism.
 
